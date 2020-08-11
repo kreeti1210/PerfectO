@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10sp">
+
+    <LinearLayout
+        android:paddingLeft="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/MatchImage"/>
+        <TextView
+            android:paddingBottom="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="24sp"
+
+            android:textColor="@color/purple"
+            android:text="Match's Name"
+            android:id="@+id/MatchName"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Match's ID"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:id="@+id/Matchid"/>
+    </LinearLayout>
+
+
+</LinearLayout>

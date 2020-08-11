@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PerfectO</string>
+    <string name="PerfectO">PerfectO</string>
+    <string name="hyperlink">Need help?<a href="https://www.google.com"></a></string>
+</resources>

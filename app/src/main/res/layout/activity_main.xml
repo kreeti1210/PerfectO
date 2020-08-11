@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+   android:layout_width="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:textAlignment="center"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/logout"
+            android:padding="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="logoutUser"
+            android:fontFamily="@font/amiko_semibold"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_alignParentStart="true"
+            android:text="logout" />
+
+        <Button
+            android:id="@+id/settings"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/amiko_semibold"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+
+            android:onClick="goToSettings"
+            android:text="Settings" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/amiko_semibold"
+            android:onClick="goToMatches"
+
+            android:text="Matches" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="4dp"
+        android:elevation="2dp"
+        android:id="@+id/cardView"
+        >
+    </androidx.cardview.widget.CardView>
+
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffeee9e2"
+        app:rotation_degrees="15.5"
+
+        />
+
+
+</LinearLayout>
