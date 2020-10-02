@@ -10,11 +10,11 @@ public class ChatViewHolders extends RecyclerView.ViewHolder implements View.OnC
     public TextView mMessage;
     public LinearLayout mContainer;
     public ChatViewHolders(View itemView) {
-        super(itemView);
-        itemView.setOnClickListener(this);
+    super(itemView);
+    itemView.setOnClickListener(this);
 
-        mMessage = itemView.findViewById(R.id.message);
-        mContainer = itemView.findViewById(R.id.container);
+    mMessage = itemView.findViewById(R.id.message);
+    mContainer = itemView.findViewById(R.id.container);
     }
 
     @Override
